@@ -1,0 +1,302 @@
+﻿html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+#gotop {
+  z-index: 99;
+}
+
+.navbar {
+  background-color: rgba(6, 138, 1, 0.4) !important;
+}
+
+.collapse_ul {
+  background-color: rgba(6, 138, 1, 0.4) !important;
+}
+
+.search_input {
+  background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.nav-link {
+  color: rgba(6, 138, 1, 1);
+}
+
+.nav-link:hover {
+  color: rgb(255, 255, 255);
+}
+
+.navbar-toggler {
+  background: #fff;
+  box-shadow: none;
+  outline: none !important;
+  box-shadow: none;
+}
+
+.navbar-brand img {
+  height: 25px;
+  padding-left: 8px;
+}
+
+.navbar-default .navbar-nav li a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav li a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#BtNav {
+  margin-left: 5px;
+}
+
+#LogoNav {
+  margin-right: 10px;
+  display: block;
+}
+
+#home {
+  background: url(../img/cactus001.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.btn-default {
+  border: none;
+  background-color: rgba(6, 138, 1, 0.4);
+  color: #fff;
+}
+
+.btn-default:hover {
+  border: none;
+  color: rgba(255, 255, 255, 0.4);
+  color: #000;
+}
+
+.column img {
+  margin-top: 25px;
+  vertical-align: middle;
+}
+
+.landing-text {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.landing-text h1 {
+  font-size: 500%;
+  font-weight: 700;
+  color: rgba(6, 138, 1, 0.8);
+}
+
+.landing-text h3 {
+  color: rgba(6, 138, 1, 0.8);
+}
+
+.padding {
+  padding: 80px 0;
+}
+
+.padding img {
+  width: 100%;
+}
+
+#about {
+  border: none;
+}
+
+#fixed {
+  background: url(../img/cactus014.jpg) no-repeat top center fixed;
+  display: table;
+  height: 90%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+footer {
+  width: 100%;
+  background-color: rgba(6, 138, 1, 0.4);
+  padding: 5% 5% 10% 5%;
+  color: #fff;
+  border: none;
+}
+
+.fa {
+  padding: 15px;
+  font-size: 25px;
+  color: #fff;
+}
+
+.fa:hover {
+  color: #d5d5d5;
+  text-decoration: none;
+}
+
+.icon {
+  max-width: 200px;
+}
+
+#video {
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+}
+
+@media (max-width: 768px) {
+  .landing-text h1 {
+    font-size: 300%;
+  }
+
+  .fa {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .icon {
+    padding-top: 5%;
+    max-width: 100px;
+  }
+}
+
+/*Gallery*/
+.container--item {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+  color: white;
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.5s;
+}
+
+.h2--item {
+  font-family: "Arapey";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.h2--item:before,
+.h2--item:after {
+  display: inline-block;
+  margin: 0 0.2em;
+  width: 0.7em;
+  height: 0.02em;
+  background: white;
+  content: "";
+  vertical-align: middle;
+  transition: all 0.2s;
+}
+
+.desc {
+  margin: 1em 0 0;
+  font-family: "ATC Overlook";
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.5;
+  color: white;
+}
+
+.column:hover .container--item {
+  opacity: 1;
+}
+
+.column:hover .container--item {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/********************************/
+/*          Panel cards         */
+/********************************/
+.panel.panel-card {
+  position: relative;
+  height: 241px;
+  border: none;
+  overflow: hidden;
+}
+.panel.panel-card .panel-heading {
+  position: relative;
+  z-index: 2;
+  height: 120px;
+  border-bottom-color: #fff;
+  overflow: hidden;
+
+  -webkit-transition: height 600ms ease-in-out;
+  transition: height 600ms ease-in-out;
+}
+.panel.panel-card .panel-heading img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 120%;
+
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+.panel.panel-card .panel-heading button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  z-index: 3;
+}
+.panel.panel-card .panel-figure {
+  position: absolute;
+  top: auto;
+  left: 50%;
+  z-index: 3;
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+
+  opacity: 1;
+  -webkit-box-shadow: 0 0 0 3px #fff;
+  box-shadow: 0 0 0 3px #fff;
+
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+
+  -webkit-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+}
+
+.panel.panel-card .panel-body {
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  -webkit-transition: padding 400ms ease-in-out;
+  transition: padding 400ms ease-in-out;
+}
+
+.panel.panel-card:hover .panel-heading {
+  height: 55px;
+
+  -webkit-transition: height 400ms ease-in-out;
+  transition: height 400ms ease-in-out;
+}
+.panel.panel-card:hover .panel-figure {
+  opacity: 0;
+
+  -webkit-transition: opacity 400ms ease-in-out;
+  transition: opacity 400ms ease-in-out;
+}
+.panel.panel-card:hover .panel-body {
+  padding-top: 20px;
+
+  -webkit-transition: padding 400ms ease-in-out;
+  transition: padding 400ms ease-in-out;
+}
